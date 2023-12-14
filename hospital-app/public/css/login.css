@@ -1,0 +1,17 @@
+.login-card {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 40%;
+    padding-left: 3%;
+    padding-right: 3%;
+    justify-content: center;
+    background-color: aquamarine;
+    margin-left: 28%;
+    margin-top: 10%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
