@@ -20,6 +20,6 @@ use CodeIgniter\Router\RouteCollection;
  $routes->get('/registrasiNonBPJS', 'RegistrasiNonBPJSController::index');
  $routes->post('/register_non_bpjs_action', 'RegistrasiNonBPJSController::register_non_bpjs_action');
 
- $routes->get('/riwayatRegistrasi', 'RiwayatRegistrasi::index');
+ $routes->get('/riwayatRegistrasi', 'RiwayatRegistrasiController::index');
  $routes->get('/penjualanObat', 'PenjualanObat::index');
  $routes->get('/riwayatPenjualanObat', 'RiwayatPenjualanObat::index');
