@@ -6,6 +6,7 @@ class RegistrasiBPJSController extends BaseController {
     public function index() {
         return view('registrasiBPJS');
     }
+
     public function register_bpjs_action() {
         $nama = $this->request->getPost('nama');
         $tgl_lahir = $this->request->getPost('tgl_lahir');
@@ -15,15 +16,14 @@ class RegistrasiBPJSController extends BaseController {
         $model = new RegistrasiBPJS();
 
         $data = [
-            'id_pasien' => "1",
             'nama_pasien' => $nama,
             'tanggal_lahir' => $tgl_lahir,
             'golongan_darah' => $golongan_darah,
             'asuransi' => "BPJS",
             'id_bpjs' => $id_bpjs,
             'kelas_rawat' => "IA",
-            'pj' => NULL,
-            'telp_pj' => NULL
+            'pj' => null,
+            'telp_pj' => null
         ];
 
         $model->saveDataRegistrasi($data);

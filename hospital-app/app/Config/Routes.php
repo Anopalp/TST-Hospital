@@ -21,5 +21,8 @@ use CodeIgniter\Router\RouteCollection;
  $routes->post('/register_non_bpjs_action', 'RegistrasiNonBPJSController::register_non_bpjs_action');
 
  $routes->get('/riwayatRegistrasi', 'RiwayatRegistrasiController::index');
- $routes->get('/penjualanObat', 'PenjualanObat::index');
+
+ $routes->get('/penjualanObat', 'PenjualanObatController::index');
+ $routes->post('/jualObat', 'PenjualanObatController::jualObat');
+
  $routes->get('/riwayatPenjualanObat', 'RiwayatPenjualanObat::index');
