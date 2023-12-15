@@ -13,14 +13,26 @@ class PenjualanObatController extends BaseController {
         $model = model(PenjualanObat::class);
 
         $id_obat = $this->request->getPost('id_obat');
-        $jumlah = $this->request->getPost('jumlah');
+        $jumlah_awal = $this->request->getPost('jumlah_awal');
+        $jumlah_jual = $this->request->getPost('jumlah_jual');
+        $threshold = $this->request->getPost('threshold');
 
-        if (empty($id_obat) || empty($jumlah) || !is_numeric($jumlah)) {
+        if (empty($id_obat) || empty($jumlah_awal) || empty($jumlah_jual) || !is_numeric($jumlah_jual) || empty($threshold)) {
             return redirect()->to('/penjualanObat')->with('error', 'Invalid Data');
         }
 
+        $jumlah_akhir = $jumlah_awal - $jumlah_jual;
+
+        if ($jumlah_akhir < 0) {
+            return redirect()->to('/penjualanObat')->with('error', 'Invalid Data');
+        }
+
+        // if ($jumlah_akhir < $threshold) {
+            
+        // }
+
         $data = [
-            'jumlah' => $jumlah
+            'jumlah' => $jumlah_akhir
         ];
 
         $model->updateDataObat($id_obat, $data);
