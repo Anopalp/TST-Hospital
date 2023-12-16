@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    height: 70px;
+    display: flex;
+}
+
+.other-options {
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-text {
+    cursor: pointer;
+}

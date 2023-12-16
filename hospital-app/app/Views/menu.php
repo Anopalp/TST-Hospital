@@ -1,11 +1,35 @@
 <html>
+    <head>
+        <link rel="stylesheet" href="/css/menu.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla&family=Libre+Baskerville&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    </head>
     <body>
-        <p>Menu :
-            <a href="/">Dashboard</a>
-            <a href="/registrasi">Registrasi</a>
-            <a href="/riwayatRegistrasi">Riwayat Registrasi</a>
-            <a href="/penjualanObat">Penjualan Obat</a>
-            <a href="/riwayatPenjualanObat">Riwayat Penjualan Obat</a>
-        </p>
+        <div class="main-header">
+            <h1>Dashboard</h1>
+        </div>
+
+        <div class="card-main">
+            <div class="inner-card" onclick="window.location.href='/registrasi'">
+                <div class="card-image"></div>
+                <div class="card-text">Registrasi</div>    
+            </div>
+            
+            <div class="inner-card" onclick="window.location.href='/riwayatRegistrasi'">
+                <div class="card-image"></div>
+                <div class="card-text">Riwayat Registrasi</div>    
+            </div>
+            
+            <div class="inner-card" onclick="window.location.href='/penjualanObat'">
+                <div class="card-image"></div>
+                <div class="card-text">Penjualan Obat</div>    
+            </div>
+
+            <div class="inner-card" onclick="window.location.href='/riwayatPenjualanObat'">
+                <div class="card-image"></div>
+                <div class="card-text">Riwayat Penjualan Obat</div>    
+            </div>
+        </div>
     </body>
 </html>
