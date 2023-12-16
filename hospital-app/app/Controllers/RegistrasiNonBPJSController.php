@@ -16,7 +16,6 @@ class RegistrasiNonBPJSController extends BaseController {
         $model = new RegistrasiNonBPJS();
 
         $data = [
-            'id_pasien' => "2",
             'nama_pasien' => $nama,
             'tanggal_lahir' => $tgl_lahir,
             'golongan_darah' => $golongan_darah,
