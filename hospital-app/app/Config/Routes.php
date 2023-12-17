@@ -26,3 +26,5 @@ use CodeIgniter\Router\RouteCollection;
  $routes->post('/jualObat', 'PenjualanObatController::jualObat');
 
  $routes->get('/riwayatPenjualanObat', 'RiwayatPenjualanObat::index');
+
+ $routes->get('/logout', 'LoginController::logout');

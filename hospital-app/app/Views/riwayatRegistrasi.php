@@ -20,6 +20,7 @@
                 <a href="/riwayatRegistrasi">Riwayat Registrasi</a>
                 <a href="/penjualanObat">Penjualan Obat</a>
                 <a href="/riwayatPenjualanObat">Riwayat Penjualan Obat</a>
+                <a href="/logout">Log Out</a>
             </div>
         </div>
 

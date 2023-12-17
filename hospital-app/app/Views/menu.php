@@ -30,6 +30,11 @@
                 <div class="card-image"></div>
                 <div class="card-text">Riwayat Penjualan Obat</div>    
             </div>
+
+            <div class="inner-card" onclick="window.location.href='/logout'">
+                <div class="card-image"></div>
+                <div class="card-text">Log Out</div>
+            </div>
         </div>
     </body>
 </html>
