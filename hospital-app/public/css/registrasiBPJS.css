@@ -1,0 +1,34 @@
+body {
+    font-family: 'Karla', sans-serif;
+    background: url('../images/bg1.jpg');
+    background-size: cover;
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color: #010101;
+}
+
+.navbar a {
+    color: white;
+}
+
+.home-icon {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.gap {
+    width: 30%;
+}
+
+.other-nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}

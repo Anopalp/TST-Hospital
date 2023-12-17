@@ -7,8 +7,8 @@
     </head>
     <body>
         <div class="navbar">
-            <div class="home-icon">
-                <a href="/">Dashboard</a>
+            <div class="home-icon" onclick="window.location.href='/'">
+                <img class="icon-home" src="/images/home.png" alt="">
             </div>
 
             <div class="gap">
@@ -34,5 +34,15 @@
                 <div class="card-text">Non BPJS</div>
             </div>
         </div>
+
+        <script>
+            function changeImage(source) {
+            const iconImage = document.getElementById('icon-image');
+            iconImage.src = source;
+
+            // Toggle a class to hide/show the image based on hover
+            iconImage.classList.toggle('img-hovered');
+            }
+        </script>
     </body>
 </html>
