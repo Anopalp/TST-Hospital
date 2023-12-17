@@ -7,8 +7,8 @@
     </head>
     <body>
         <div class="navbar">
-            <div class="home-icon">
-                <a href="/">Dashboard</a>
+            <div class="home-icon" onclick="window.location.href='/'">
+                <img class="icon-home" src="/images/home.png" alt=""/>
             </div>
 
             <div class="gap">
@@ -23,16 +23,31 @@
             </div>
         </div>
 
-        <a href="/registrasi">Kembali</a>
-        <div>
-            <h2>Registrasi BPJS</h2>
-            <form action="/register_bpjs_action" method="POST">
-                <input class="inner-component" type="text" name="nama" placeholder="nama"/>
-                <input class="inner-component" type="date" name="tgl_lahir" placeholder="tgl_lahir"/>
-                <input class="inner-component" type="text" name="golongan_darah" placeholder="golongan_darah"/>
-                <input class="inner-component" type="text" name="id_bpjs" placeholder="id_bpjs"/>
-                <button class="inner-component" type="submit">Registrasi</button>
-            </form>
+        <div class="header-container">
+            <div class="back-container" onclick="window.location.href='/registrasi'">
+                <img src="/images/back.png" alt="">
+            </div>
+
+            <div class="h2-container">
+                <h2>Registrasi BPJS</h2>
+            </div>
+            
+            <div class="gap-2">
+
+            </div>
+        </div>
+
+        <div class="input-form">
+            <div class="form-margin">
+                <form action="/register_bpjs_action" method="POST">
+                    <input class="inner-component" type="text" name="nama" placeholder="nama"/>
+                    <input class="inner-component" type="date" name="tgl_lahir" placeholder="tgl_lahir"/>
+                    <input class="inner-component" type="text" name="golongan_darah" placeholder="golongan_darah"/>
+                    <input class="inner-component" type="text" name="id_bpjs" placeholder="id_bpjs"/>
+                    <button class="inner-component" type="submit">Registrasi</button>
+                </form>
+            </div>
+            
         </div>
     </body>
 </html>

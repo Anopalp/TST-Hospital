@@ -13,8 +13,17 @@ body {
     background-color: #010101;
 }
 
+.icon-home {
+    height: 50px;
+    cursor: pointer;
+}
+
 .navbar a {
-    color: white;
+    color: #f5f5f5;
+}
+
+.navbar a:hover {
+    color: #fa8072;
 }
 
 .home-icon {
@@ -31,4 +40,67 @@ body {
     width: 60%;
     display: flex;
     justify-content: space-evenly;
+}
+
+.other-nav a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.back-container {
+    width: 10%;
+    display: 1;
+    text-align: center;
+}
+
+.back-button {
+    color: #fa8072;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.h2-container {
+    flex: 1;
+    text-align: center;
+    width: 80%;
+}
+
+h2 {
+    color: #010101;
+    margin: 70px auto;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.gap-2 {
+    width: 10%;
+}
+
+.input-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-margin {
+    width: 30%;
+}
+
+.inner-component {
+    margin-bottom: 20px;
+}
+
+.back-container img {
+    height: 50px;
+    cursor: pointer;
 }
