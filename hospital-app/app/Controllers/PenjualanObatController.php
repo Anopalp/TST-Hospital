@@ -4,6 +4,10 @@ use App\Models\PenjualanObat;
 
 class PenjualanObatController extends BaseController {
     public function index() {
+        if (session()->get('num_user') == '') {
+            return redirect()->to('/login');
+        }
+
         $model = model(PenjualanObat::class);
         $data['penjualanObat'] = $model->getDataObat();
         return view('penjualanObat', $data);

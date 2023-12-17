@@ -4,6 +4,10 @@ use App\Models\RegistrasiNonBPJS;
 
 class RegistrasiNonBPJSController extends BaseController {
     public function index() {
+        if (session()->get('num_user') == '') {
+            return redirect()->to('/login');
+        }
+        
         return view('registrasiNonBPJS');
     }
     public function register_non_bpjs_action() {
@@ -12,6 +16,10 @@ class RegistrasiNonBPJSController extends BaseController {
         $golongan_darah = $this->request->getPost('golongan_darah');
         $pj = $this->request->getPost('pj');
         $telp_pj = $this->request->getPost('telp_pj');
+
+        if (!$nama || !$tgl_lahir || !$golongan_darah || !$pj || !$telp_pj) {
+            return redirect()->to('/registrasiNonBPJS');
+        }
 
         $model = new RegistrasiNonBPJS();
 

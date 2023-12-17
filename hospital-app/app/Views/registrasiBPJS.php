@@ -47,7 +47,7 @@
                     <button class="inner-component" type="submit">Registrasi</button>
                 </form>
             </div>
-            
         </div>
+        
     </body>
 </html>

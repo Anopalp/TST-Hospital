@@ -4,6 +4,10 @@ use App\Models\RegistrasiBPJS;
 
 class RegistrasiBPJSController extends BaseController {
     public function index() {
+        if (session()->get('num_user') == '') {
+            return redirect()->to('/login');
+        }
+
         return view('registrasiBPJS');
     }
 
@@ -12,6 +16,10 @@ class RegistrasiBPJSController extends BaseController {
         $tgl_lahir = $this->request->getPost('tgl_lahir');
         $golongan_darah = $this->request->getPost('golongan_darah');
         $id_bpjs = $this->request->getPost('id_bpjs');
+
+        if (!$nama || !$tgl_lahir || !$golongan_darah || !$id_bpjs) {
+            return redirect()->to('/registrasiBPJS');
+        }
 
         // API Consume
         $api_url = 'https://bpjs-tst.000webhostapp.com/api/hospitaltst/test1234/peserta/' . $id_bpjs;
