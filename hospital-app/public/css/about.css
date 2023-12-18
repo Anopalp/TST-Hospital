@@ -53,3 +53,20 @@ h2 {
     font-weight: bolder;
     font-size: 3em;
 }
+
+.about-text {
+    text-align: center;
+    margin: 70px auto; /* Adjust the margin as needed */
+    width: 60%; /* Adjust the width as needed */
+}
+
+.about-image {
+    text-align: center;
+}
+
+.about-image img {
+    width: 30%;
+    margin: 20px auto;
+    display: block;
+    border-radius: 50%;
+}

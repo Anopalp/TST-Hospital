@@ -39,7 +39,7 @@
                         <input type="hidden" name="golongan" value="<?= esc($dataObat['golongan']) ?>"/>
                         <input type="hidden" name="harga" value="<?= esc($dataObat['harga']) ?>"/>
                         <input type="hidden" name="jumlah_awal" value="<?= esc($dataObat['jumlah']) ?>"/>
-                        <input type="number" name="jumlah_request" min="0"/>
+                        <input type="number" name="jumlah_request" min="0" required/>
                         <button type="submit">Request</button>
                     </form>
                 </div>

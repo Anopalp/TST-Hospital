@@ -41,11 +41,11 @@
         <div class="input-form">
             <div class="form-margin">
                 <form action="/register_non_bpjs_action" method="POST">
-                    <input class="inner-component" type="text" name="nama" placeholder="nama"/>
-                    <input class="inner-component" type="date" name="tgl_lahir" placeholder="tgl_lahir"/>
-                    <input class="inner-component" type="text" name="golongan_darah" placeholder="golongan_darah"/>
-                    <input class="inner-component" type="text" name="pj" placeholder="pj"/>
-                    <input class="inner-component" type="text" name="telp_pj" placeholder="telp_pj"/>
+                    <input class="inner-component" type="text" name="nama" placeholder="nama" required/>
+                    <input class="inner-component" type="date" name="tgl_lahir" placeholder="tgl_lahir" required/>
+                    <input class="inner-component" type="text" name="golongan_darah" placeholder="golongan_darah" required/>
+                    <input class="inner-component" type="text" name="pj" placeholder="pj" required/>
+                    <input class="inner-component" type="text" name="telp_pj" placeholder="telp_pj" required/>
                     <button class="inner-component" type="submit">Registrasi</button>
                 </form>
             </div>
