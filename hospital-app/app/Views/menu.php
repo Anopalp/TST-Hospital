@@ -23,12 +23,12 @@
             
             <div class="inner-card" onclick="window.location.href='/penjualanObat'">
                 <div class="card-image"></div>
-                <div class="card-text">Penjualan Obat</div>    
+                <div class="card-text">Request Obat</div>    
             </div>
 
             <div class="inner-card" onclick="window.location.href='/riwayatPenjualanObat'">
                 <div class="card-image"></div>
-                <div class="card-text">Riwayat Penjualan Obat</div>    
+                <div class="card-text">Riwayat Request Obat</div>    
             </div>
 
             <div class="inner-card" onclick="window.location.href='/logout'">

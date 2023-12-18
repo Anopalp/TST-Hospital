@@ -18,8 +18,8 @@
             <div class="other-nav">
                 <a href="/registrasi">Registrasi</a>
                 <a href="/riwayatRegistrasi">Riwayat Registrasi</a>
-                <a href="/penjualanObat">Penjualan Obat</a>
-                <a href="/riwayatPenjualanObat">Riwayat Penjualan Obat</a>
+                <a href="/penjualanObat">Request Obat</a>
+                <a href="/riwayatPenjualanObat">Riwayat Request Obat</a>
                 <a href="/logout">Log Out</a>
             </div>
         </div>
