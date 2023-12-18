@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" href="/css/penjualanObat.css">
+        <link rel="stylesheet" href="/css/requestObat.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Karla&family=Libre+Baskerville&family=Roboto:wght@100&display=swap" rel="stylesheet">
@@ -18,22 +18,22 @@
             <div class="other-nav">
                 <a href="/registrasi">Registrasi</a>
                 <a href="/riwayatRegistrasi">Riwayat Registrasi</a>
-                <a href="/penjualanObat">Request Obat</a>
-                <a href="/riwayatPenjualanObat">Riwayat Request Obat</a>
+                <a href="/requestObat">Request Obat</a>
+                <a href="/riwayatRequestObat">Riwayat Request Obat</a>
                 <a href="/logout">Log Out</a>
             </div>
         </div>
 
-        <h2>Penjualan Obat</h2>
+        <h2>Request Obat</h2>
 
-        <?php if (! empty($penjualanObat) && is_array($penjualanObat) ): ?>
-            <?php foreach($penjualanObat as $dataObat): ?>
+        <?php if (! empty($requestObat) && is_array($requestObat) ): ?>
+            <?php foreach($requestObat as $dataObat): ?>
                 <div class="card-obat">
                     <h3><?= esc($dataObat['nama_obat']) ?></h3>
                     <p>Golongan Obat : <?= esc($dataObat['golongan']) ?></p>
                     <p>Jumlah        : <?= esc($dataObat['jumlah']) ?></p>
                     <p>Harga         : <?= esc($dataObat['harga']) ?></p>
-                    <form action="/jualObat" method="POST">
+                    <form action="/requestObat" method="POST">
                         <input type="hidden" name="id_obat" value="<?= esc($dataObat['id_obat']) ?>"/>
                         <input type="hidden" name="nama_obat" value="<?= esc($dataObat['nama_obat']) ?>"/>
                         <input type="hidden" name="golongan" value="<?= esc($dataObat['golongan']) ?>"/>

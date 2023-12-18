@@ -25,14 +25,14 @@
                 <div class="card-text">Riwayat Registrasi</div>    
             </div>
             
-            <div class="inner-card" onclick="window.location.href='/penjualanObat'">
+            <div class="inner-card" onclick="window.location.href='/requestObat'">
                 <div class="card-image">
                     <img src="/images/request.png" alt="">
                 </div>
                 <div class="card-text">Request Obat</div>    
             </div>
 
-            <div class="inner-card" onclick="window.location.href='/riwayatPenjualanObat'">
+            <div class="inner-card" onclick="window.location.href='/riwayatRequestObat'">
                 <div class="card-image">
                     <img src="/images/history.png" alt="">
                 </div>

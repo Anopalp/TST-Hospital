@@ -1,28 +1,29 @@
 <?php
 namespace App\Controllers;
-use App\Models\PenjualanObat;
+use App\Models\RequestObat;
 
-class PenjualanObatController extends BaseController {
+class RequestObatController extends BaseController {
     public function index() {
         if (session()->get('num_user') == '') {
             return redirect()->to('/login');
         }
 
-        $model = model(PenjualanObat::class);
-        $data['penjualanObat'] = $model->getDataObat();
-        return view('penjualanObat', $data);
+        $model = model(RequestObat::class);
+        $data['requestObat'] = $model->getDataObat();
+        return view('requestObat', $data);
     }
 
-    public function jualObat() {
-        $model = model(PenjualanObat::class);
+    public function requestObat() {
+        $model = model(RequestObat::class);
 
         $id_obat = $this->request->getPost('id_obat');
         $nama_obat = $this->request->getPost('nama_obat');
+        $harga = $this->request->getPost('harga');
         $jumlah_awal = $this->request->getPost('jumlah_awal');
         $jumlah_request = $this->request->getPost('jumlah_request');
 
-        if (empty($id_obat) || empty($nama_obat) || empty($jumlah_awal) || empty($jumlah_request) || !is_numeric($jumlah_request)) {
-            return redirect()->to('/penjualanObat')->with('error', 'Invalid Data');
+        if (empty($id_obat) || empty($nama_obat) || empty($harga) || empty($jumlah_awal) || empty($jumlah_request) || !is_numeric($jumlah_request)) {
+            return redirect()->to('/requestObat')->with('error', 'Invalid Data');
         }
 
         $json_data = [
@@ -45,18 +46,20 @@ class PenjualanObatController extends BaseController {
 
             // Update the Request Table
             $requestData = [
+                'nama_obat' => $nama_obat,
                 'jumlah_request' => $jumlah_request,
-                'total_harga' => $jumlah_request*10,
+                'total_harga' => $jumlah_request * $harga,
                 'status_request' => 'Diterima'
             ];
 
             $model->saveDataRequest($requestData);
 
-            return redirect()->to('/penjualanObat');
+            return redirect()->to('/requestObat');
         } elseif (strpos($http_status, '204') !== false) {
             $requestData = [
+                'nama_obat' => $nama_obat,
                 'jumlah_request' => $jumlah_request,
-                'total_harga' => $jumlah_request*10,
+                'total_harga' => $jumlah_request * $harga,
                 'status_request' => 'Ditolak'
             ];
 

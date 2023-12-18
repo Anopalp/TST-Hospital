@@ -2,7 +2,7 @@
 namespace App\Models;
 use CodeIgniter\Model;
 
-class PenjualanObat extends Model {
+class RequestObat extends Model {
     protected $table = 'obat';
     public function getDataObat() {
         return $this->findAll(1000);

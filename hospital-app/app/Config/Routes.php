@@ -22,10 +22,10 @@ use CodeIgniter\Router\RouteCollection;
 
  $routes->get('/riwayatRegistrasi', 'RiwayatRegistrasiController::index');
 
- $routes->get('/penjualanObat', 'PenjualanObatController::index');
- $routes->post('/jualObat', 'PenjualanObatController::jualObat');
+ $routes->get('/requestObat', 'RequestObatController::index');
+ $routes->post('/requestObat', 'RequestObatController::requestObat');
 
- $routes->get('/riwayatPenjualanObat', 'RiwayatPenjualanObat::index');
+ $routes->get('/riwayatRequestObat', 'RiwayatRequestObatController::index');
 
  $routes->get('/logout', 'LoginController::logout');
 

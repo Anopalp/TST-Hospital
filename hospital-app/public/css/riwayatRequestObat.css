@@ -53,3 +53,17 @@ h2 {
     font-weight: bolder;
     font-size: 2em;
 }
+
+.table-container {
+    margin: 20px auto;
+    width: 70%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
