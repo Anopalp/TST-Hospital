@@ -38,9 +38,8 @@
                         <input type="hidden" name="nama_obat" value="<?= esc($dataObat['nama_obat']) ?>"/>
                         <input type="hidden" name="golongan" value="<?= esc($dataObat['golongan']) ?>"/>
                         <input type="hidden" name="harga" value="<?= esc($dataObat['harga']) ?>"/>
-                        <input type="hidden" name="threshold" value="<?= esc($dataObat['threshold']) ?>"/>
                         <input type="hidden" name="jumlah_awal" value="<?= esc($dataObat['jumlah']) ?>"/>
-                        <input type="number" name="jumlah_jual" min="0"/>
+                        <input type="number" name="jumlah_request" min="0"/>
                         <button type="submit">Request</button>
                     </form>
                 </div>
