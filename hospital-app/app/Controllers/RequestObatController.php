@@ -54,7 +54,7 @@ class RequestObatController extends BaseController {
 
             $model->saveDataRequest($requestData);
 
-            return redirect()->to('/requestObat');
+            return redirect()->to('/riwayatRequestObat');
         } elseif (strpos($http_status, '204') !== false) {
             $requestData = [
                 'nama_obat' => $nama_obat,
@@ -65,9 +65,9 @@ class RequestObatController extends BaseController {
 
             $model->saveDataRequest($requestData);
 
-            return redirect()->to('/');
+            return redirect()->to('/riwayatRequestObat');
         } else {
-            return redirect()->to('/about');
+            return redirect()->to('/requestObat');
         }
     }
 }

@@ -31,6 +31,7 @@
                 <table>
                     <tr>
                         <th>Id Request</th>
+                        <th>Nama Obat</th>
                         <th>Jumlah Request</th>
                         <th>Total Harga</th>
                         <th>Status Request</th>
@@ -38,6 +39,7 @@
                     <?php foreach($riwayatRequest as $req_item): ?>
                     <tr>
                         <td><?= esc($req_item['id_request']) ?></td>
+                        <td><?= esc($req_item['nama_obat']) ?></td>
                         <td><?= esc($req_item['jumlah_request']) ?></td>
                         <td><?= esc($req_item['total_harga']) ?></td>
                         <td><?= esc($req_item['status_request']) ?></td>
