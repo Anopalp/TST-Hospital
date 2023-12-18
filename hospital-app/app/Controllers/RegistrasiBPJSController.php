@@ -37,7 +37,7 @@ class RegistrasiBPJSController extends BaseController {
 
         $peserta_data = $decode_data['peserta'];
 
-        if ($peserta_data['no_kartu'] != $id_bpjs || $peserta_data['nama'] != $nama) {
+        if ($peserta_data['no_kartu'] != $id_bpjs || $peserta_data['nama'] != $nama || $peserta_data['tanggal_lahir'] != $tgl_lahir) {
             return redirect()->to('/registrasiBPJS');
         }
 

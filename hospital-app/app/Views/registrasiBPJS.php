@@ -4,6 +4,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Karla&family=Libre+Baskerville&family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="/favicon.ico">
     </head>
     <body>
         <div class="navbar">
@@ -41,10 +42,10 @@
         <div class="input-form">
             <div class="form-margin">
                 <form action="/register_bpjs_action" method="POST">
-                    <input class="inner-component" type="text" name="nama" placeholder="nama"/>
-                    <input class="inner-component" type="date" name="tgl_lahir" placeholder="tgl_lahir"/>
-                    <input class="inner-component" type="text" name="golongan_darah" placeholder="golongan_darah"/>
-                    <input class="inner-component" type="text" name="id_bpjs" placeholder="id_bpjs"/>
+                    <input class="inner-component" type="text" name="nama" placeholder="nama" required/>
+                    <input class="inner-component" type="date" name="tgl_lahir" placeholder="tgl_lahir" required/>
+                    <input class="inner-component" type="text" name="golongan_darah" placeholder="golongan_darah" required/>
+                    <input class="inner-component" type="text" name="id_bpjs" placeholder="id_bpjs" required/>
                     <button class="inner-component" type="submit">Registrasi</button>
                 </form>
             </div>
