@@ -28,3 +28,5 @@ use CodeIgniter\Router\RouteCollection;
  $routes->get('/riwayatPenjualanObat', 'RiwayatPenjualanObat::index');
 
  $routes->get('/logout', 'LoginController::logout');
+
+ $routes->get('/about', 'AboutController::index');

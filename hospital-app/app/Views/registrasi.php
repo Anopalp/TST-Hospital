@@ -28,10 +28,16 @@
         
         <div class="card-asuransi">
             <div class="inner-card" onclick="window.location.href='/registrasiBPJS'">
+                <div class="inner-image">
+                    <img src="/images/bpjs.png" alt="">
+                </div>
                 <div class="card-text">BPJS</div>
             </div>
             
             <div class="inner-card" onclick="window.location.href='/registrasiNonBPJS'">
+                <div class="inner-image">
+                    <img src="/images/nonbpjs.png" alt="">
+                </div>
                 <div class="card-text">Non BPJS</div>
             </div>
         </div>

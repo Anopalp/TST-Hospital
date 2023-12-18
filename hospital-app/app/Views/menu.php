@@ -35,6 +35,11 @@
                 <div class="card-image"></div>
                 <div class="card-text">Log Out</div>
             </div>
+
+            <div class="inner-card" onclick="window.location.href='/about'">
+                <div class="card-image"></div>
+                <div class="card-text">About</div>
+            </div>
         </div>
     </body>
 </html>
